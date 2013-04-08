@@ -5,7 +5,7 @@ and [Tim Fischbach](http://github.com/tf) ([@tfischbach](http://twitter.com/tfis
 
 ## Links & Resources
 
-* [Slides](http://tf.github.com/buster-js-testing/slides)
+* [Slides](http://tf.github.com/buster-js-testing-talk/slides)
 
 ### Buster.JS
 
