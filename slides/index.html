@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buser.JS Testing</title>
+
+    <link rel="stylesheet" href="build/main.css" />
+    <script src="build/ender.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="centered">JavaScript Testing <span>with</span> Buster.JS</h1>
+    </section>
+
+    <section>
+      <p class="centered humble">
+        Vangelis / @kioopi<br />
+        Tim / @tfischbach
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="centered">basics</p>
+    </section>
+
+    <section class="code">
+      <pre class="centered">
+        $ npm install -g buster
+        $ vim test/buster.js
+
+        $ buster server &
+        # visit http://localhost:1111/capture
+
+        $ buster test
+        ................F...
+      </pre>
+    </section>
+
+    <section class="">
+      <p class="centered">node</p>
+    </section>
+
+    <section class="alert">
+      <pre style="text-align: center; -webkit-transform: translateY(-3em)">buster -v</pre>
+      <p>0.x.x</p>
+    </section>
+
+    <section>
+      <p>no boilerplate</p>
+    </section>
+
+    <section class="code">
+      <pre class="centered">
+        # buster.js
+        var config = module.exports;
+
+        config.all = {
+          rootPath: '../',
+          environment: 'browser',
+          sources: [
+            my/all.js'
+          ],
+          tests: ['test/unit/**/*_test.js']
+        };
+      </pre>
+    </section>
+
+    <section>
+      <p>full stack</p>
+    </section>
+
+    <section class="code">
+      <pre>
+        buster.testCase("Buster", {
+          "supports xunit style": function () {
+            assert.equals("foo", "bar");
+          }
+        }
+      </pre>
+    </section>
+
+    <section class="code">
+      <pre>
+        buster.spec.expose();
+
+        describe('buster', function() {
+          it('supports bdd style', function() {
+            expect('foo').toBe('bar');
+          });
+        });
+      </pre>
+    </section>
+
+    <section class="code">
+      <pre>
+        it('includes sinon', function() {
+          expect(sinon.spy()).not
+            .toHaveBeenCalled();
+        });
+      </pre>
+    </section>
+
+    <section class="section">
+      <p>async</p>
+    </section>
+
+    <section class="code">
+      <pre>
+        describe('an async test', function() {
+          it('can call done', function(done) {
+            doSomething().then(done);
+          });
+        });
+      </pre>
+    </section>
+
+    <section class="code">
+      <pre>
+        describe('an async test', function() {
+          it('can return a promise', function() {
+            return doSomething();
+          });
+        });
+      </pre>
+    </section>
+
+    <section class="section">
+      <p>modular</p>
+    </section>
+
+    <section class="section">
+      <p>very modular</p>
+    </section>
+
+    <section class="code">
+      <pre>
+        $ npm ls -g | grep buster | wc -l
+        25
+      </pre>
+    </section>
+
+    <section>
+      <p>buster static</p>
+    </section>
+
+    <section class="section">
+      <p>CI</p>
+    </section>
+
+
+
+    <section>
+      <p>
+        thanks
+
+        <span class="links">
+          busterjs.org<br />
+          @kioopi, @tfischbach<br />
+          links & slides &nbsp;&ndash;&nbsp; github.com/tf/buster-js-testing-talk
+        </span>
+      </p>
+    </section>
+  </body>
+</html>
