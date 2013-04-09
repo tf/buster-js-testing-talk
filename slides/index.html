@@ -119,30 +119,6 @@
     </section>
 
     <section class="em">
-      <p>async</p>
-    </section>
-
-    <section class="code">
-      <pre>
-        describe('an async test', function() {
-          it('can call done', function(done) {
-            doSomething().then(done);
-          });
-        });
-      </pre>
-    </section>
-
-    <section class="code">
-      <pre>
-        describe('an async test', function() {
-          it('can return a promise', function() {
-            return doSomething();
-          });
-        });
-      </pre>
-    </section>
-
-    <section class="em">
       <p>reporters</p>
     </section>
 
@@ -187,11 +163,32 @@
 
 
     <section class="em">
-      <p>modular</p>
+      <p>async</p>
     </section>
 
+    <section class="code">
+      <pre>
+        describe('an async test', function() {
+          it('can call done', function(done) {
+            doSomething().then(done);
+          });
+        });
+      </pre>
+    </section>
+
+    <section class="code">
+      <pre>
+        describe('an async test', function() {
+          it('can return a promise', function() {
+            return doSomething();
+          });
+        });
+      </pre>
+    </section>
+
+
     <section class="em">
-      <p>very modular</p>
+      <p>modular</p>
     </section>
 
     <section class="code">
