@@ -596,3 +596,14 @@ section:not(.custom) > * {
 .section {
   background-color: #f6a122;
 }
+.logo {
+  color: transparent;
+  z-index: 100;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  height: 60px;
+  width: 60px;
+  background: url("../assets/logo.png") top left no-repeat;
+  background-size: 100% auto;
+}
