@@ -593,8 +593,11 @@ section:not(.custom) > * {
   font-weight: 400;
   src: local('Chivo'), local('Chivo-Regular'), url("http://themes.googleusercontent.com/static/fonts/chivo/v4/2vOGounxqJdQZmH7ou5HpA.woff") format('woff');
 }
-.section {
+.em {
   background-color: #f6a122;
+}
+.codevise {
+  background-color: #50a125;
 }
 .logo {
   color: transparent;
